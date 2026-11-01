@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Street Verse | A Voz e a Essência do Rap</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="nav-container">
+      <div class="logo-container">
+        <img src="imagens/logo-oficial.jpg" alt="Logo Street Verse" class="logo-img">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#sobre">A Marca</a></li>
+          <li><a href="#artistas">Ícones</a></li>
+          <li><a href="#historia">História</a></li>
+          <li><a href="#iniciantes">Aprenda</a></li>
+          <li><a href="#beatmaker">Beat Maker</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1 class="hero-title">Street Verse</h1>
+    <p class="hero-subtitle">Mais do que um género musical: vivências, críticas, resistência e expressão.</p>
+  </section>
+
+  <div class="container">
+
+    <!-- QUEM SOMOS -->
+    <section id="sobre">
+      <h2 class="section-title">Sobre a Marca</h2>
+      <div class="about-box">
+        <div class="about-text">
+          <p><strong>A Street Verse é uma marca que nasce da vontade de mostrar a força do rap e tudo aquilo que ele representa dentro da cultura.</strong></p>
+          
+          <p>Nossa proposta é trazer para perto as letras significativas, as histórias, as características marcantes e a identidade que fazem do rap muito mais do que apenas um gênero musical.</p>
+          
+          <div class="highlight-quote">
+            "Também queremos falar sobre o preconceito que ainda existe em torno dessa cultura. Muitas vezes, o rap é associado de forma injusta à periferia, à marginalização ou à falta de contexto."
+          </div>
+          
+          <p>Mas existe muito mais por trás de cada verso: <strong>vivências, críticas, resistência, criatividade e expressão.</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARTISTAS & ÍCONES -->
+    <section id="artistas">
+      <h2 class="section-title">Ícones da Cultura Rap</h2>
+      <p style="margin-bottom: 25px; color: var(--text-muted);">Clica no cartão de cada artista para descobrir o seu impacto cultural, mensagem e discografia.</p>
+      
+      <div class="artists-grid">
+        <!-- Card Racionais -->
+        <div class="artist-card" onclick="openModal('racionais')">
+          <div class="artist-img-wrapper">
+            <img src="imagens/racionais.jpg" alt="Racionais MC's" class="artist-img">
+          </div>
+          <div class="artist-info">
+            <span class="artist-tag">Brasil • Consciente</span>
+            <h3 class="artist-name">Racionais MC's</h3>
+            <p class="artist-preview">A maior referência de resistência e voz ativa da periferia no Brasil.</p>
+          </div>
+        </div>
+
+        <!-- Card Sabotage -->
+        <div class="artist-card" onclick="openModal('sabotage')">
+          <div class="artist-img-wrapper">
+            <img src="imagens/sabotage.jpg" alt="Sabotage" class="artist-img">
+          </div>
+          <div class="artist-info">
+            <span class="artist-tag">Brasil • Maestro do Canão</span>
+            <h3 class="artist-name">Sabotage</h3>
+            <p class="artist-preview">Genialidade lírica, flow inconfundível e o retrato poético da favela.</p>
+          </div>
+        </div>
+
+        <!-- Card Tupac -->
+        <div class="artist-card" onclick="openModal('tupac')">
+          <div class="artist-img-wrapper">
+            <img src="imagens/2pac.jpg" alt="Tupac Shakur" class="artist-img">
+          </div>
+          <div class="artist-info">
+            <span class="artist-tag">EUA • Lenda Global</span>
+            <h3 class="artist-name">Tupac Shakur</h3>
+            <p class="artist-preview">Poetismo visceral, igualdade racial e lutas sociais no hip-hop internacional.</p>
+          </div>
+        </div>
+
+        <!-- Card Nas -->
+        <div class="artist-card" onclick="openModal('nas')">
+          <div class="artist-img-wrapper">
+            <img src="imagens/nas.jpg" alt="Nas" class="artist-img">
+          </div>
+          <div class="artist-info">
+            <span class="artist-tag">EUA • Golden Era</span>
+            <h3 class="artist-name">Nas</h3>
+            <p class="artist-preview">Um dos maiores líricos da história e autor do clássico absoluto Illmatic.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HISTÓRIA E PILARES -->
+    <section id="historia">
+      <h2 class="section-title">A Cultura & Os Pilares</h2>
+      <div class="history-grid">
+        <div class="history-card">
+          <h3>As Origens (Bronx - Anos 70)</h3>
+          <p>O rap emergiu nas festas de rua no Bronx como forma de protesto e celebração da juventude negra e latina, tornando-se o canal vocal do movimento Hip-Hop.</p>
+        </div>
+        <div class="history-card">
+          <h3>O Rap no Brasil</h3>
+          <p>Na década de 80, a Praça da Sé e a estação São Bento em São Paulo viraram os berços do rap nacional, usando o ritmo para expor a desigualdade e o racismo estrutural.</p>
+        </div>
+        <div class="history-card">
+          <h3>A Força dos 4 Pilares</h3>
+          <p>O Rap integra o Hip-Hop ao lado do DJing, Breakdance e Graffiti. É a síntese da arte urbana em constante movimento e transformação social.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GUIA PARA INICIANTES -->
+    <section id="iniciantes">
+      <h2 class="section-title">Como Começar no Rap</h2>
+      <div class="steps-container">
+        <div class="step-box">
+          <div class="step-number">01</div>
+          <h3>Escuta & Referência</h3>
+          <p>Ouve diferentes subgéneros (Boom Bap, Trap, Drill). Presta atenção à métrica e às construções de rima dos mestres.</p>
+        </div>
+        <div class="step-box">
+          <div class="step-number">02</div>
+          <h3>Escreve Diariamente</h3>
+          <p>Anota ideias, frases e relatos sobre o teu quotidiano num caderno. O rap autêntico vem da observação real.</p>
+        </div>
+        <div class="step-box">
+          <div class="step-number">03</div>
+          <h3>Domínio do Flow</h3>
+          <p>Pratica rimar em cima de diferentes BPMs. Encontra o teu tempo, encaixe de sílabas e respiração natural no tempo da batida.</p>
+        </div>
+        <div class="step-box">
+          <div class="step-number">04</div>
+          <h3>Voz & Identidade</h3>
+          <p>Não tentes copiar o tom de ninguém. O valor do rap está na verdade e no timbre único da tua própria mensagem.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEAT MAKER INTERATIVO -->
+    <section id="beatmaker">
+      <h2 class="section-title">Street Beats • Estúdio Interativo</h2>
+      <p style="margin-bottom: 20px; color: var(--text-muted);">Cria os teus ritmos! Clica nos pads abaixo ou usa o sequenciador de 8 passos para programar a tua batida.</p>
+      
+      <div class="beat-studio">
+        <div class="studio-controls">
+          <div>
+            <button class="btn-action" id="playSeqBtn">▶ Iniciar Sequenciador</button>
+            <button class="btn-action" id="clearSeqBtn" style="background:#444; margin-left: 10px;">Limpar</button>
+          </div>
+          <div class="bpm-control">
+            <label for="bpmRange"><strong>BPM: <span id="bpmVal">90</span></strong></label>
+            <input type="range" id="bpmRange" min="70" max="140" value="90">
+          </div>
+        </div>
+
+        <!-- PADS DE BATERIA -->
+        <div class="pads-grid">
+          <div class="pad-btn" data-sound="kick" data-key="Q">
+            <span>BUMBO (Kick)</span>
+            <span class="pad-key">Tecla Q</span>
+          </div>
+          <div class="pad-btn" data-sound="snare" data-key="W">
+            <span>CAIXA (Snare)</span>
+            <span class="pad-key">Tecla W</span>
+          </div>
+          <div class="pad-btn" data-sound="hihat" data-key="E">
+            <span>CHIMBAL (Hi-Hat)</span>
+            <span class="pad-key">Tecla E</span>
+          </div>
+          <div class="pad-btn" data-sound="clap" data-key="A">
+            <span>PALMA (Clap)</span>
+            <span class="pad-key">Tecla A</span>
+          </div>
+          <div class="pad-btn" data-sound="bass" data-key="S">
+            <span>GRAVE (808)</span>
+            <span class="pad-key">Tecla S</span>
+          </div>
+          <div class="pad-btn" data-sound="perc" data-key="D">
+            <span>RIMSHOT</span>
+            <span class="pad-key">Tecla D</span>
+          </div>
+        </div>
+
+        <!-- SEQUENCIADOR -->
+        <h4 style="margin-bottom: 15px; text-transform: uppercase; color: var(--text-muted);">Sequenciador de Rítmo (8 Passos)</h4>
+        <div class="sequencer" id="sequencerGrid">
+          <!-- Gerado via JS -->
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- MODAL DE DETALHES DO ARTISTA -->
+  <div class="modal" id="artistModal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal()">&times;</span>
+      <div class="modal-header">
+        <img src="" id="modalImg" class="modal-avatar" alt="Artista">
+        <div class="modal-title-box">
+          <h3 id="modalName"></h3>
+          <span class="artist-tag" id="modalTag"></span>
+        </div>
+      </div>
+
+      <div class="modal-section">
+        <h4>O Que Representa na Cultura</h4>
+        <p id="modalRep"></p>
+      </div>
+
+      <div class="modal-section">
+        <h4>A Mensagem das Músicas</h4>
+        <p id="modalMsg"></p>
+      </div>
+
+      <div class="modal-section">
+        <h4>História & Trajetória</h4>
+        <p id="modalBio"></p>
+      </div>
+
+      <div class="modal-section">
+        <h4>Álbuns & Faixas Marcantes</h4>
+        <p id="modalWorks"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; Street Verse — Força, Cultura e Resistência do Rap.</p>
+  </footer>
+
+  <script>
+    /* DADOS DOS ARTISTAS */
+    const artistsData = {
+      racionais: {
+        name: "Racionais MC's",
+        tag: "Brasil • Rap Consciente",
+        img: "racionais.jfif",
+        rep: "Representam o pilar máximo do rap consciente no Brasil. Deram voz, orgulho e consciência política à população das periferias e favelas brasileiras a partir do final dos anos 80.",
+        msg: "A denúncia social, o combate ao racismo estrutural, a violência policial e a sobrevivência nas quebradas. As suas letras são lições de vida sobre manter a dignidade e a postura mesmo diante das adversidades.",
+        bio: "Formado por Mano Brown, Ice Blue, Edi Rock e DJ KL Jay em São Paulo. O grupo revolucionou a música brasileira ao mostrar a realidade crua das periferias sem filtros comerciais.",
+        works: "Álbuns: 'Sobrevivendo no Inferno', 'Nada como um Dia Após Outro Dia'. Faixas: 'Diário de um Detento', 'Jesus Chorou', 'Negro Drama'."
+      },
+      sabotage: {
+        name: "Sabotage",
+        tag: "Brasil • Maestro do Canão",
+        img: "sabotage.webp",
+        rep: "Representa a síntese entre a vivência de favela, o intelecto refinado e a versatilidade artística. Mostrou como o rap pode dialogar com o samba, a MPB e o cinema.",
+        msg: "Superação, sabedoria de rua, resiliência e a busca por um futuro melhor através da arte, transmitindo sempre a mensagem de que a periferia produz mentes brilhantes.",
+        bio: "Mauro Mateus dos Santos, o Sabotage, nasceu na Zona Sul de SP. Teve uma carreira curta porém meteórica até a sua morte prematura em 2003, deixando um legado imortal na cultura nacional.",
+        works: "Álbum: 'Rap é Compromisso!'. Faixas: 'Mun-Rá', 'Um Bom Lugar', 'Respeito é Pra Quem Tem'."
+      },
+      tupac: {
+        name: "Tupac Shakur (2Pac)",
+        tag: "EUA • Poeta & Ativista",
+        img: "2pac.jfif",
+        rep: "Representa o ícone global máximo do Hip-Hop. O seu espírito revolucionário influenciado pelos Panteras Negras uniu poesia sensível, paixão e protesto social intransigente.",
+        msg: "Resistência contra o preconceito de raça e classe, a dor das mães na periferia, a contradição humana e a luta diária dos marginalizados no sistema.",
+        bio: "Nascido no Harlem, Nova Iorque, Tupac tornou-se num dos artistas mais influentes do mundo. Vendeu milhões de discos e tornou-se num símbolo eterno de liberdade e expressão política.",
+        works: "Álbuns: 'Me Against the World', 'All Eyez on Me'. Faixas: 'Dear Mama', 'Changes', 'Keep Ya Head Up'."
+      },
+      nas: {
+        name: "Nas",
+        tag: "EUA • Golden Era",
+        img: "nas.jfif",
+        rep: "Representa o topo do lirismo e da narrativa poética urbana ('storytelling'). É a grande referência da Era de Ouro do rap nova-iorquino.",
+        msg: "Críticas sociais afiadas, observações detalhadas da vida nos bairros sociais (housing projects), filosofia de rua e sabedoria em relação ao conhecimento de si próprio.",
+        bio: "Nasir Jones cresceu em Queensbridge, Nova Iorque. Com o lançamento do lendário álbum 'Illmatic' em 1994 com apenas 20 anos, estabeleceu um novo padrão para as rimas no hip-hop mundial.",
+        works: "Álbuns: 'Illmatic', 'It Was Written', 'King's Disease'. Faixas: 'N.Y. State of Mind', 'The World Is Yours', 'One Love'."
+      }
+    };
+
+    function openModal(id) {
+      const data = artistsData[id];
+      if(!data) return;
+      document.getElementById('modalImg').src = data.img;
+      document.getElementById('modalName').innerText = data.name;
+      document.getElementById('modalTag').innerText = data.tag;
+      document.getElementById('modalRep').innerText = data.rep;
+      document.getElementById('modalMsg').innerText = data.msg;
+      document.getElementById('modalBio').innerText = data.bio;
+      document.getElementById('modalWorks').innerText = data.works;
+      document.getElementById('artistModal').classList.add('active');
+    }
+
+    function closeModal() {
+      document.getElementById('artistModal').classList.remove('active');
+    }
+
+    /* WEB AUDIO API - SINTETIZADOR DE SONS DE BATERIA */
+    const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+    function playSound(type) {
+      if (audioCtx.state === 'suspended') {
+        audioCtx.resume();
+      }
+
+      const now = audioCtx.currentTime;
+
+      if (type === 'kick') {
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.frequency.setValueAtTime(120, now);
+        osc.frequency.exponentialRampToValueAtTime(0.01, now + 0.4);
+        gain.gain.setValueAtTime(1, now);
+        gain.gain.exponentialRampToValueAtTime(0.01, now + 0.4);
+        osc.start(now);
+        osc.stop(now + 0.4);
+      } 
+      else if (type === 'snare') {
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = 'triangle';
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.frequency.setValueAtTime(220, now);
+        gain.gain.setValueAtTime(0.7, now);
+        gain.gain.exponentialRampToValueAtTime(0.01, now + 0.2);
+        osc.start(now);
+        osc.stop(now + 0.2);
+      }
+      else if (type === 'hihat') {
+        const bufferSize = audioCtx.sampleRate * 0.05;
+        const buffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+        const data = buffer.getChannelData(0);
+        for (let i = 0; i < bufferSize; i++) {
+          data[i] = Math.random() * 2 - 1;
+        }
+        const noise = audioCtx.createBufferSource();
+        noise.buffer = buffer;
+        const filter = audioCtx.createBiquadFilter();
+        filter.type = 'highpass';
+        filter.frequency.value = 7000;
+        const gain = audioCtx.createGain();
+        gain.gain.setValueAtTime(0.3, now);
+        gain.gain.exponentialRampToValueAtTime(0.01, now + 0.05);
+        noise.connect(filter);
+        filter.connect(gain);
+        gain.connect(audioCtx.destination);
+        noise.start(now);
+      }
+      else if (type === 'clap') {
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = 'square';
+        osc.frequency.setValueAtTime(400, now);
+        gain.gain.setValueAtTime(0.5, now);
+        gain.gain.exponentialRampToValueAtTime(0.01, now + 0.15);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start(now);
+        osc.stop(now + 0.15);
+      }
+      else if (type === 'bass') {
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(60, now);
+        osc.frequency.exponentialRampToValueAtTime(30, now + 0.6);
+        gain.gain.setValueAtTime(0.8, now);
+        gain.gain.exponentialRampToValueAtTime(0.01, now + 0.6);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start(now);
+        osc.stop(now + 0.6);
+      }
+      else if (type === 'perc') {
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.frequency.setValueAtTime(600, now);
+        osc.frequency.exponentialRampToValueAtTime(200, now + 0.08);
+        gain.gain.setValueAtTime(0.6, now);
+        gain.gain.exponentialRampToValueAtTime(0.01, now + 0.08);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start(now);
+        osc.stop(now + 0.08);
+      }
+    }
+
+    /* PADS CLICK & KEYBOARD EVENTS */
+    const pads = document.querySelectorAll('.pad-btn');
+    pads.forEach(pad => {
+      pad.addEventListener('click', () => {
+        const sound = pad.getAttribute('data-sound');
+        playSound(sound);
+        pad.classList.add('active');
+        setTimeout(() => pad.classList.remove('active'), 100);
+      });
+    });
+
+    const keyMap = { 'q': 'kick', 'w': 'snare', 'e': 'hihat', 'a': 'clap', 's': 'bass', 'd': 'perc' };
+    window.addEventListener('keydown', (e) => {
+      const key = e.key.toLowerCase();
+      if (keyMap[key]) {
+        playSound(keyMap[key]);
+        const padBtn = document.querySelector(`.pad-btn[data-sound="${keyMap[key]}"]`);
+        if(padBtn) {
+          padBtn.classList.add('active');
+          setTimeout(() => padBtn.classList.remove('active'), 100);
+        }
+      }
+    });
+
+    /* SEQUENCIADOR PROGRAMÁVEL */
+    const sounds = ['kick', 'snare', 'hihat', 'clap'];
+    const soundNames = { kick: 'BUMBO', snare: 'CAIXA', hihat: 'CHIMBAL', clap: 'PALMA' };
+    const seqGrid = document.getElementById('sequencerGrid');
+    const seqMatrix = {};
+
+    sounds.forEach(sound => {
+      seqMatrix[sound] = Array(8).fill(false);
+      const row = document.createElement('div');
+      row.className = 'seq-row';
+      
+      const label = document.createElement('div');
+      label.className = 'seq-label';
+      label.innerText = soundNames[sound];
+      row.appendChild(label);
+
+      const stepsDiv = document.createElement('div');
+      stepsDiv.className = 'seq-steps';
+
+      for(let i=0; i<8; i++) {
+        const stepBtn = document.createElement('button');
+        stepBtn.className = 'step-btn';
+        stepBtn.addEventListener('click', () => {
+          seqMatrix[sound][i] = !seqMatrix[sound][i];
+          stepBtn.classList.toggle('active');
+        });
+        stepsDiv.appendChild(stepBtn);
+      }
+      row.appendChild(stepsDiv);
+      seqGrid.appendChild(row);
+    });
+
+    let isPlaying = false;
+    let currentStep = 0;
+    let seqInterval = null;
+    const bpmRange = document.getElementById('bpmRange');
+    const bpmVal = document.getElementById('bpmVal');
+
+    bpmRange.addEventListener('input', (e) => {
+      bpmVal.innerText = e.target.value;
+      if (isPlaying) {
+        stopSequencer();
+        startSequencer();
+      }
+    });
+
+    document.getElementById('playSeqBtn').addEventListener('click', function() {
+      if (isPlaying) {
+        stopSequencer();
+        this.innerText = '▶ Iniciar Sequenciador';
+      } else {
+        startSequencer();
+        this.innerText = '⏹ Parar Sequenciador';
+      }
+    });
+
+    document.getElementById('clearSeqBtn').addEventListener('click', () => {
+      sounds.forEach(sound => {
+        seqMatrix[sound] = Array(8).fill(false);
+      });
+      document.querySelectorAll('.step-btn').forEach(btn => btn.classList.remove('active'));
+    });
+
+    function startSequencer() {
+      isPlaying = true;
+      const bpm = parseInt(bpmRange.value);
+      const stepTime = (60 / bpm / 2) * 1000;
+
+      seqInterval = setInterval(() => {
+        document.querySelectorAll('.step-btn').forEach((btn, idx) => {
+          if (idx % 8 === currentStep) {
+            btn.classList.add('playing');
+          } else {
+            btn.classList.remove('playing');
+          }
+        });
+
+        sounds.forEach(sound => {
+          if (seqMatrix[sound][currentStep]) {
+            playSound(sound);
+          }
+        });
+
+        currentStep = (currentStep + 1) % 8;
+      }, stepTime);
+    }
+
+    function stopSequencer() {
+      isPlaying = false;
+      clearInterval(seqInterval);
+      document.querySelectorAll('.step-btn').forEach(btn => btn.classList.remove('playing'));
+      currentStep = 0;
+    }
+  </script>
+</body>
+</html>
